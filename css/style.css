@@ -1,0 +1,205 @@
+html {
+	font-size: 62.5%;
+}
+
+*, *::before,*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+    background: #f5f5f5;
+    font-size: 62.5%;
+    font-family: 微軟正黑體;
+    color: #424242;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+
+.header {
+    top: 0;
+    height: 300px;
+    background: #424242;
+}
+
+.left {
+    float: left;
+    width: 33%;
+    height: 100%;
+    background: url('../images/BMICLogoYellow.png') no-repeat center center;
+    background-size: auto 40%;
+}
+
+.center {
+    float: left;
+    width: 33%;
+    height: auto;
+}
+
+.data {
+    padding: 50px 0;
+}
+
+.center label,
+.center [type="text"] {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2.0rem;
+}
+
+.center label {
+    color: #FFD366;
+}
+
+.center [type="text"] {
+    border: #FFD366 2px solid;
+    border-radius: 6px;
+    width: 250px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #FFF;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.borderRed {
+    border: #F00 2px solid !important;
+}
+
+.right {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+.bmiResult {
+    display: inline-block;
+    margin: 80px 0;    
+}
+
+.bmiResult p {
+    border: 0;
+    border-radius: 50%;
+    background: #FFD366;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bmiResult .bmireset {
+    display: none;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: -35px;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border: #424242 3px solid;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.bmiResultText {
+    display: none;
+    position: absolute;
+}
+
+.section {
+	padding-top: 20px;
+    padding-bottom: 60px;
+	background: #f5f5f5;
+	color: #333;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 3.0rem;
+}
+
+.userbmihistory {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.userbmihistory ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.userbmihistory li {
+    float: left;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.userbmihistory li div {
+    display: inline-block;
+    background: #FFF;
+    width: 10%;
+    height: 100%;
+    font-size: 2.0rem;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.userbmihistory li div sup {
+    font-weight: normal;
+}
+
+.userbmihistory li div:nth-child(6n+5) {
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+.userbmihistory a {
+    text-decoration: none;
+ }
+
+.userbmihistory a img {
+    width: 20px;
+    height :20px;
+ }
+
+.footer { 
+    background: #FFD366 url('../images/BMICLogo.png') no-repeat center center;
+    background-size: auto 80%;
+    padding: 12px 0;
+    height: 50px;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+}
+
+.bmiResultBg {background-color: #424242 !important;}
+.bmiBorder {border: 6px solid !important;}
+.bmiTxt {border-left: #ccc 7px solid;} 
+
+.bmiBlue {border-color: #31BAF9; color: #31BAF9; background-color: #31BAF9;}
+.bmiGreen {border-color: #86D73e; color: #86D73e; background-color: #86D73e;}
+.bmiOrange {border-color: #FF982D ; color: #FF982D; background-color: #FF982D;}
+.bmiOrangedeep {border-color: #FF6C02; color: #FF6C02; background-color: #FF6C02;}
+.bmiRed {border-color: #FF1200; color: #FF1200; background-color: #FF1200;}
+
+.bmiclass {font-size: 1.0rem;}
