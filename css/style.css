@@ -155,11 +155,12 @@ html, body {
 .userbmihistory li div {
     display: inline-block;
     background: #FFF;
-    width: 10%;
+    /*width: 10%;*/
     height: 100%;
     font-size: 2.0rem;
     font-weight: bold;
     vertical-align: top;
+    padding: 15px;
 }
 
 .userbmihistory li div sup {
